@@ -1,0 +1,61 @@
+[gd_scene load_steps=10 format=2]
+
+[ext_resource path="res://Finalização.gd" type="Script" id=1]
+[ext_resource path="res://classic_memesbruh03.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://rei cansado.png" type="Texture" id=3]
+[ext_resource path="res://papel.png" type="Texture" id=4]
+[ext_resource path="res://Sala_do_ trono.png" type="Texture" id=5]
+
+[sub_resource type="DynamicFont" id=1]
+font_data = ExtResource( 2 )
+
+[sub_resource type="Theme" id=2]
+default_font = SubResource( 1 )
+
+[sub_resource type="DynamicFont" id=3]
+font_data = ExtResource( 2 )
+
+[sub_resource type="Theme" id=4]
+default_font = SubResource( 3 )
+
+[node name="Finalização" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="SalaDoTrono" type="Sprite" parent="."]
+position = Vector2( 585, 351 )
+scale = Vector2( 1.19426, 1.19071 )
+texture = ExtResource( 5 )
+
+[node name="ReiCansado" type="Sprite" parent="."]
+position = Vector2( 530, 276 )
+texture = ExtResource( 3 )
+
+[node name="Papel" type="Sprite" parent="."]
+position = Vector2( 506.5, 445 )
+scale = Vector2( 3.67704, 1.56122 )
+texture = ExtResource( 4 )
+
+[node name="Label" type="Label" parent="."]
+modulate = Color( 0, 0, 0, 1 )
+margin_left = 99.0
+margin_top = 362.0
+margin_right = 435.0
+margin_bottom = 429.0
+rect_scale = Vector2( 2.5, 2.5 )
+theme = SubResource( 2 )
+text = "O rei Goulart ainda está cansado, porém 
+aliviado. Ele entende que seu povo precisa
+dele e ele de seu povo. E que juntos teráo
+diversos problemas, mas teráo que 
+enfrentá-los juntos
+                         "
+
+[node name="Label2" type="Label" parent="."]
+modulate = Color( 0, 0, 0, 1 )
+margin_left = 599.0
+margin_top = 536.0
+margin_right = 733.0
+margin_bottom = 557.0
+rect_scale = Vector2( 2.5, 2.5 )
+theme = SubResource( 4 )
+text = "Pressione enter"
